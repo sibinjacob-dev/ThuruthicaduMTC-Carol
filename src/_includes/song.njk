@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+<h2 style="text-align:center; margin-bottom: 20px;">{{ title }}</h2>
+
+<button id="langToggle" class="btn" onclick="toggleLanguage()">Show Manglish</button>
+
+<div id="malayalam">
+    <pre>{{ lyrics_malayalam }}</pre>
+</div>
+
+<div id="manglish" class="hidden">
+    <pre>{{ lyrics_manglish }}</pre>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const mal = document.getElementById('malayalam');
+        const man = document.getElementById('manglish');
+        const btn = document.getElementById('langToggle');
+
+        if (mal.classList.contains('hidden')) {
+            mal.classList.remove('hidden');
+            man.classList.add('hidden');
+            btn.innerText = "Show Manglish";
+        } else {
+            mal.classList.add('hidden');
+            man.classList.remove('hidden');
+            btn.innerText = "Show Malayalam";
+        }
+    }
+</script>s

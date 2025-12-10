@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; background: #f9f9f9; }
+        .hidden { display: none; }
+        header { margin-bottom: 30px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        a { text-decoration: none; color: #333; }
+        .btn { width: 100%; padding: 15px; background: #2c3e50; color: white; border: none; font-size: 1rem; cursor: pointer; border-radius: 8px; margin-bottom: 20px; }
+        .btn:hover { background: #1a252f; }
+        pre { font-family: inherit; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.8; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        ul { list-style: none; padding: 0; }
+        li { background: white; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        li a { display: block; font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/"><h3>📖 Church Songbook</h3></a>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>

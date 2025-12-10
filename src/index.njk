@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: All Songs
+---
+<ul>
+{% for song in collections.songs %}
+  <li>
+    <a href="{{ song.url }}">{{ song.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
