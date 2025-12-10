@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
 
   return {
+    pathPrefix: "/ThuruthicaduMTC-Carol/",
     dir: {
       input: "src",
       output: "_site"

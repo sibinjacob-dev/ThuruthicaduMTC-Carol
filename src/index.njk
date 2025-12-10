@@ -5,7 +5,7 @@ title: All Songs
 <ul>
 {% for song in collections.songs %}
   <li>
-    <a href="{{ song.url }}">{{ song.data.title }}</a>
+    <a href="{{ song.url | url }}">{{ song.data.title }}</a>
   </li>
 {% endfor %}
 </ul>
